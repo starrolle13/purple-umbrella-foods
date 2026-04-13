@@ -47,8 +47,8 @@ const mealPlans = [
     description: "Affordable, practical meal options made for students who need good food without the stress.",
     samples: ["Pasta with Protein", "Hearty Rice Bowls", "Budget-Friendly Protein Plates"],
     price: "$60",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663548141538/kfunPkHKQ8ehKBruz2bxaE/puf-meal-college-hwWG6t89Z5XfvxkWVyccbk.webp",
-  },
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663548141538/kfunPkHKQ8ehKBruz2bxaE/puf-meal-college-updated-jyjMzAucWDd6Y7JVD7KJk7.webp",
+  }
 ];
 
 const features = [
@@ -409,7 +409,7 @@ export default function Home() {
               <h3 className="font-serif font-bold text-lg mb-2">Email</h3>
               <a
                 href="mailto:purpleumbrellafoods@gmail.com"
-                className="text-secondary-foreground hover:text-accent transition-colors duration-300"
+                className="text-secondary-foreground hover:text-accent transition-colors duration-300 break-all text-sm"
               >
                 purpleumbrellafoods@gmail.com
               </a>
