@@ -3,6 +3,13 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/**
+ * Design System: Luxe Minimalist
+ * Color Palette: Deep Purple, Brushed Gold, Off-white, Charcoal
+ * Typography: Playfair Display (serif headlines), Lato (body text)
+ * Aesthetic: Premium, sophisticated, minimalist with intentional whitespace
+ */
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -43,74 +50,73 @@
 }
 
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
+  /* Luxe Minimalist Color Palette */
+  --primary: #4b0082; /* Deep Purple */
+  --primary-foreground: #faf8f5; /* Off-white */
+  --accent: #daa520; /* Brushed Gold */
+  --accent-foreground: #282828; /* Charcoal */
+  --sidebar-primary: #4b0082;
+  --sidebar-primary-foreground: #faf8f5;
+  --chart-1: #daa520;
+  --chart-2: #4b0082;
+  --chart-3: #6b3fa0;
+  --chart-4: #8b5fbf;
+  --chart-5: #ab7fdf;
   --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
+  --background: #faf8f5; /* Off-white */
+  --foreground: #282828; /* Charcoal */
+  --card: #ffffff;
+  --card-foreground: #282828;
+  --popover: #ffffff;
+  --popover-foreground: #282828;
+  --secondary: #f5f3f0;
+  --secondary-foreground: #4b0082;
+  --muted: #e8e5e0;
+  --muted-foreground: #666666;
+  --destructive: #dc2626;
+  --destructive-foreground: #faf8f5;
+  --border: #e8e5e0;
+  --input: #ffffff;
+  --ring: #daa520;
+  --sidebar: #faf8f5;
+  --sidebar-foreground: #282828;
+  --sidebar-accent: #daa520;
+  --sidebar-accent-foreground: #282828;
+  --sidebar-border: #e8e5e0;
+  --sidebar-ring: #daa520;
 }
 
 .dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
+  --primary: #4b0082;
+  --primary-foreground: #faf8f5;
+  --background: #1a1a1a;
+  --foreground: #faf8f5;
+  --card: #2a2a2a;
+  --card-foreground: #faf8f5;
+  --popover: #2a2a2a;
+  --popover-foreground: #faf8f5;
+  --secondary: #3a3a3a;
+  --secondary-foreground: #daa520;
+  --muted: #4a4a4a;
+  --muted-foreground: #b0b0b0;
+  --accent: #daa520;
+  --accent-foreground: #1a1a1a;
+  --destructive: #ef4444;
+  --destructive-foreground: #faf8f5;
+  --border: #3a3a3a;
+  --input: #2a2a2a;
+  --ring: #daa520;
+  --chart-1: #daa520;
+  --chart-2: #4b0082;
+  --chart-3: #6b3fa0;
+  --chart-4: #8b5fbf;
+  --chart-5: #ab7fdf;
+  --sidebar: #2a2a2a;
+  --sidebar-foreground: #faf8f5;
+  --sidebar-accent: #daa520;
+  --sidebar-accent-foreground: #1a1a1a;
+  --sidebar-border: #3a3a3a;
+  --sidebar-ring: #daa520;
 }
 
 @layer base {
@@ -131,27 +137,38 @@
   input[type="radio"]:not(:disabled) {
     @apply cursor-pointer;
   }
+
+  /* Typography: Playfair Display for headlines, Lato for body */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold;
+  }
+
+  h1 {
+    @apply text-5xl md:text-6xl lg:text-7xl;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl;
+  }
+
+  h3 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  body {
+    @apply font-sans text-base leading-relaxed;
+  }
 }
 
 @layer components {
   /**
    * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
    */
   .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
+    padding-left: 1rem;
     padding-right: 1rem;
   }
 
@@ -162,16 +179,59 @@
 
   @media (min-width: 640px) {
     .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-left: 1.5rem;
       padding-right: 1.5rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
-      padding-left: 2rem; /* 32px - desktop padding */
+      padding-left: 2rem;
       padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+      max-width: 1280px;
     }
   }
+
+  /* Luxe Minimalist Components */
+  .gold-divider {
+    @apply h-px bg-gradient-to-r from-transparent via-accent to-transparent;
+  }
+
+  .gold-accent {
+    @apply text-accent;
+  }
+
+  .premium-button {
+    @apply px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-lg transition-all duration-300 hover:shadow-lg;
+  }
+
+  .premium-button:hover {
+    opacity: 0.9;
+  }
+
+  .premium-button-outline {
+    @apply px-8 py-3 border-2 border-primary text-primary font-semibold rounded-lg transition-all duration-300 hover:bg-primary hover:text-primary-foreground;
+  }
+
+  .premium-card {
+    @apply bg-card text-card-foreground rounded-lg p-6 shadow-md transition-all duration-300 hover:shadow-xl;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-serif font-bold text-center mb-12 text-foreground;
+  }
+
+  .section-subtitle {
+    @apply text-lg md:text-xl text-muted-foreground text-center mb-8;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Lato:wght@300;400;500;700&display=swap');
+
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: 'Playfair Display', serif;
 }
