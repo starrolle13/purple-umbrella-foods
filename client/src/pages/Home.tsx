@@ -76,8 +76,8 @@ const features = [
 
 const pricingOptions = [
   { title: "Standard Weekly", subtitle: "Lunch + Dinner", price: "$95+", period: "per week" },
-  { title: "Monthly Discount", subtitle: "Lunch + Dinner", price: "$75", period: "per week" },
-  { title: "College Students", subtitle: "Lunch + Dinner", price: "$60", period: "per week" },
+  { title: "Monthly Discount", subtitle: "Lunch + Dinner", price: "$75+", period: "per week" },
+  { title: "College Students", subtitle: "Lunch + Dinner", price: "$60+", period: "per week" },
   { title: "Sunday Dinner", subtitle: "Family-style", price: "$60+", period: "per week" },
 ];
 
@@ -184,7 +184,7 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="hidden md:block relative h-96">
+            <div className="relative h-96 md:h-96">
               <img
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663548141538/kfunPkHKQ8ehKBruz2bxaE/puf-mobile-hero-FjjsSKjadZFttNmA5SQNeS.webp"
                 alt="Premium meal prep"
